@@ -3,6 +3,10 @@ django-perfect404
 
 Easy to install perfect 404 page, based on [A List Apart's article][article].
 
+The main goal of this small project — to provide a simple but flexible
+way to add an excellent 404 page, which handles referers, broken links,
+searches from different engines, etc..
+
 Installation
 ------------
 
