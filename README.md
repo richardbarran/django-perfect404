@@ -14,6 +14,18 @@ Installation
 * Add `perfect404` to the INSTALLED_APPS.
 * Add `handler404 = 'perfect404.views.page_not_found'` to the `urls.py`.
 
+Customization
+-------------
+
+If you want to customize your 404 page, then override template 'perfect404.html'. It's
+context contains following variables:
+
+  * `request_path` -- page's location.
+  * `referer` -- URL of the page that refer to the missing one. This variable can be empty
+    string in case if user entered the URL by hand.
+  * `internal` -- boolean variable which is True if broken link is internal.
+  * `contact` -- dict with two keys: 'name' and 'email'. These are taken from settings.ADMINS[0].
+
 TODO
 ----
 
