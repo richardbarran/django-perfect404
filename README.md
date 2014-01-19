@@ -38,3 +38,7 @@ Clone [this project on GitHub][github] and dont't forget to send me patches! :-)
 
 [github]: http://github.com/svetlyak40wt/django-perfect404/
 [article]: http://www.alistapart.com/articles/perfect404/
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/svetlyak40wt/django-perfect404/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
