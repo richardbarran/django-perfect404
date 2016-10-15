@@ -35,4 +35,4 @@ def page_not_found(request, template_name='perfect404.html'):
                         'referer': referer,
                         'internal': internal,
                         'contact': contact,
-                    })))
+                    }).flatten()))
