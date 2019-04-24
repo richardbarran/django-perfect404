@@ -5,6 +5,7 @@ from django.conf import settings
 from django.template import RequestContext, loader
 from django.contrib.sites.models import Site
 
+
 def page_not_found(request, template_name='perfect404.html'):
     """
     Perfect 404 handler.
@@ -22,17 +23,19 @@ def page_not_found(request, template_name='perfect404.html'):
     if referer[:len(iam)] == iam:
         internal = True
 
-
     if settings.ADMINS:
         contact = dict(zip(('name', 'email'), settings.ADMINS[0]))
     else:
         contact = None
 
     t = loader.get_template(template_name)
-    return http.HttpResponseNotFound(t.render(RequestContext(
-                    request, {
-                        'request_path': request.path,
-                        'referer': referer,
-                        'internal': internal,
-                        'contact': contact,
-                    })))
+    context = RequestContext(
+        request, {
+            'request': request,
+            'request_path': request.path,
+            'referer': referer,
+            'internal': internal,
+            'contact': contact,
+        })
+    content = t.render(context.flatten())
+    return http.HttpResponseNotFound(content)
