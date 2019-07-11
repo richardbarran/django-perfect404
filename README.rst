@@ -5,7 +5,7 @@ django-perfect404
     :target: https://pypi.python.org/pypi/django-perfect404/
     :alt: Latest PyPI version
 
-Easy to install perfect 404 page, based on [A List Apart's article][article].
+Easy to install perfect 404 page, based on `A List Apart's article<http://www.alistapart.com/articles/perfect404/>`_.
 
 The main goal of this small project — to provide a simple but flexible
 way to add an excellent 404 page, which handles referers, broken links,
@@ -38,10 +38,5 @@ TODO
 Contribution
 ------------
 
-Clone [this project on GitHub][github] and dont't forget to send me patches! :-)
-
-[github]: http://github.com/svetlyak40wt/django-perfect404/
-[article]: http://www.alistapart.com/articles/perfect404/
-
-
-
+`Clone this project on GitHub <http://github.com/svetlyak40wt/django-perfect404/>`_ and don't
+forget to send me patches! :-)
