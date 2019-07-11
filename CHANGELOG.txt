@@ -1,0 +1,9 @@
+Changelog
+=========
+
+1.0 (unreleased)
+----------------
+
+- Project has been transferred from Alexander Artemenko to Richard Barran.
+
+
