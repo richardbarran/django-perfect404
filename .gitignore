@@ -2,3 +2,4 @@
 .*.swp
 dist
 *.egg-info
+*/db.sqlite3
