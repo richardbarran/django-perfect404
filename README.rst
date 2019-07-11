@@ -1,6 +1,10 @@
 django-perfect404
 =================
 
+.. image:: https://img.shields.io/pypi/v/django-perfect404.svg
+    :target: https://pypi.python.org/pypi/django-perfect404/
+    :alt: Latest PyPI version
+
 Easy to install perfect 404 page, based on [A List Apart's article][article].
 
 The main goal of this small project — to provide a simple but flexible
@@ -40,5 +44,4 @@ Clone [this project on GitHub][github] and dont't forget to send me patches! :-)
 [article]: http://www.alistapart.com/articles/perfect404/
 
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/svetlyak40wt/django-perfect404/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
