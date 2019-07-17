@@ -31,10 +31,13 @@ def page_not_found(request, template_name='perfect404.html'):
         contact = None
 
     t = loader.get_template(template_name)
-    return http.HttpResponseNotFound(t.render(RequestContext(
+    context = RequestContext(
         request, {
+            'request': request,
             'request_path': request.path,
             'referer': referer,
             'internal': internal,
             'contact': contact,
-        })))
+        })
+    content = t.render(context.flatten())
+    return http.HttpResponseNotFound(content)
