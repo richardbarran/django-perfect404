@@ -3,3 +3,11 @@
 dist
 *.egg-info
 */db.sqlite3
+
+# Coverage
+demo_project/coverage_html_report
+demo_project/.coverage
+
+# Tox workfiles
+.tox/*
+
