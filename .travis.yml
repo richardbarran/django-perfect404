@@ -11,6 +11,8 @@ language: python
 
 python:
   - "2.7"
+  - "3.4"
+  - "3.5"
   - "3.6"
 
 # NB have to manually install Django - just install the current version as it's purely for use by coverage report.
