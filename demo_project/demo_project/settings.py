@@ -114,6 +114,11 @@ LOGGING = {
         },
         'django.request': {
             'handlers': ['console'],
+            'level': 'WARNING',
+            'propagate': False,
+        },
+        'perfect404': {
+            'handlers': ['console'],
             'level': 'DEBUG',
             'propagate': False,
         },
