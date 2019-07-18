@@ -18,11 +18,11 @@ setup(
         'Programming Language :: Python',
         'Topic :: Software Development :: Libraries :: Python Modules',
     ],
-    packages = find_packages(),
+    packages = find_packages(exclude=['demo_project']),
     package_data = {
         'templates': ['*.html'],
     },
     include_package_data = True,
-    zip_safe = False,
+    zip_safe = True,
 )
 

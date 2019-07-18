@@ -8,7 +8,7 @@ from django.contrib.sites.models import Site
 log = logging.getLogger('perfect404')
 
 
-def page_not_found(request, template_name='perfect404.html'):
+def page_not_found(request, exception=None, template_name='perfect404.html'):
     """
     Perfect 404 handler.
 
