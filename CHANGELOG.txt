@@ -5,5 +5,7 @@ Changelog
 ----------------
 
 - Project has been transferred from Alexander Artemenko to Richard Barran.
+- Tested against Django 2.2.
+- Added unit tests, CI, coverage report.
 
 
