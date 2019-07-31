@@ -20,9 +20,8 @@ setup(
     ],
     packages=find_packages(exclude=['demo_project']),
     package_data={
-        'templates': ['*.html'],
+        'templates': ['perfect404/templates/*.html'],
     },
     include_package_data=True,
     zip_safe=True,
 )
-

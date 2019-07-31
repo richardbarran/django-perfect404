@@ -1,2 +1,9 @@
+include CHANGELOG.txt
+include LICENSE.txt
 include README.rst
 recursive-include */templates *.html
+recursive-exclude * __pycache__
+prune demo_project
+prune scripts
+exclude tox.ini
+
