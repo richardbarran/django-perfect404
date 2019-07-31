@@ -31,27 +31,27 @@ Add to ``INSTALLED_APPS`` setting::
          'perfect404',
     )
     
-Finally, add to the base `urls.py` of your project::
+Finally, add to the base ``urls.py`` of your project::
 
     handler404 = 'perfect404.views.page_not_found'
 
 Customization
 -------------
 
-If you want to customize your 404 page, then override template `perfect404.html`. Its
+If you want to customize your 404 page, then override template ``perfect404.html``. Its
 context contains the following variables:
 
-* `request_path`: page's location.
-* `referer`: URL of the page that refer to the missing one. This variable can be empty
+* ``request_path``: page's location.
+* ``referer``: URL of the page that refer to the missing one. This variable can be empty
   string in case if user entered the URL by hand.
-* `internal`: boolean variable which is True if broken link is internal.
-* `contact`: dict with two keys: 'name' and 'email'. These are taken from settings.ADMINS[0].
+* ``internal``: boolean variable which is True if broken link is internal.
+* ``contact``: dict with two keys: ``name`` and ``email``. These are taken from ``settings.ADMINS[0]``.
 
 TODO
 ----
 
 * Add support for search engine referrals and custom links output.
-* This app needs `Sites` to be installed - we need to remove this dependency.
+* This app needs ``Sites`` to be installed - we need to remove this dependency.
 * The 404 template needs cleaning.
 
 Contribution
