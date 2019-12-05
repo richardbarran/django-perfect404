@@ -10,7 +10,6 @@ language: python
 #    and in series (each server runs all the Django envs for that version of Python).
 
 python:
-  - "2.7"
   - "3.4"
   - "3.5"
   - "3.6"

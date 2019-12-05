@@ -18,7 +18,7 @@ def page_not_found(request, exception=None, template_name='perfect404.html'):
             The path of the requested URL (e.g., '/app/pages/bad_page/')
     """
     referer = request.META.get('HTTP_REFERER', '')
-    log.warning('missing %r, referer %r' % (request.path, referer))
+    log.warning('missing {!r}, referer {!r}'.format(request.path, referer))
 
     internal = False
     iam = 'http://%s' % Site.objects.get_current().domain
