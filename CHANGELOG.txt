@@ -4,7 +4,7 @@ Changelog
 1.1 (unreleased)
 ----------------
 
-- Dropped support for Python 2.
+- Dropped support for Python 2 and 3.4.
 
 
 1.0 (2019-07-31)
