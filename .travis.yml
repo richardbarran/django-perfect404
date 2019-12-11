@@ -13,11 +13,11 @@ python:
   - "3.5"
   - "3.6"
   - "3.7"
+  - "3.8"
 
-# NB have to manually install Django - just install the current version as it's purely for use by coverage report.
 install:
   - pip install tox-travis
-  - if [ "$TRAVIS_PYTHON_VERSION" = "3.6" ]; then pip install coveralls Django==1.10.8; fi
+  - if [ "$TRAVIS_PYTHON_VERSION" = "3.6" ]; then pip install coveralls; fi
 
 script:
   # Run against all the Python interpreter and Django versions specified in the tox.ini file.
