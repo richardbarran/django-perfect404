@@ -5,11 +5,9 @@ django-perfect404
     :target: https://pypi.python.org/pypi/django-perfect404/
     :alt: Latest PyPI version
 
-.. image:: https://travis-ci.org/richardbarran/django-perfect404.svg?branch=master
-    :target: https://travis-ci.org/richardbarran/django-perfect404
-
-.. image:: https://coveralls.io/repos/github/richardbarran/django-perfect404/badge.svg?branch=master
-    :target: https://coveralls.io/github/richardbarran/django-perfect404?branch=master
+.. image:: https://github.com/richardbarran/django-perfect404/workflows/CI/badge.svg?branch=master
+     :target: https://github.com/richardbarran/django-perfect404/actions?workflow=CI
+     :alt: CI Status
 
 
 A easy to install perfect 404 page, based on `A List Apart's article <http://www.alistapart.com/articles/perfect404/>`_.
@@ -30,7 +28,7 @@ Add to ``INSTALLED_APPS`` setting::
          # ...other installed applications,
          'perfect404',
     )
-    
+
 Finally, add to the base ``urls.py`` of your project::
 
     handler404 = 'perfect404.views.page_not_found'
